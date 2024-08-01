@@ -10,9 +10,9 @@ a {
 /* reset */
 ol, ul {
     list-style-type: none;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    padding-left:0;
+    margin-top:0;
+    margin-bottom:0;
 }
 h1,
 h2,
@@ -21,8 +21,8 @@ h4,
 h5,
 h6,
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top:0;
+    margin-bottom:0;
 }
 
 img {
@@ -179,11 +179,24 @@ img {
 /*Hero page */
 
 /* Section 1 Description */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .description-section {
     justify-content: space-between;
     padding: 120px 0;
 }
-
 .description-li{
     display: flex;
     flex-direction: column;
@@ -273,7 +286,8 @@ img {
 /* Our portfolio */
 
 .our-portfolio{
-    margin: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px
 }
 
 .title-our-portfolio{
